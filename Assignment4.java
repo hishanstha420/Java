@@ -23,7 +23,7 @@ public class Assignment4 {
         frame.add(labelGender);
         JRadioButton r1=new JRadioButton("A) Male");    
         JRadioButton r2=new JRadioButton("B) Female");  
-        JRadioButton r3=new JRadioButton("B) Others"); 
+        JRadioButton r3=new JRadioButton("C) Others"); 
         r1.setBounds(75,50,100,30);    
         r2.setBounds(180,50,100,30);
         r3.setBounds(300,50,100,30);
@@ -130,14 +130,55 @@ public class Assignment4 {
         labelExperiance = new JLabel("Describe your work experiance");
         labelExperiance.setBounds(0, 460, 500, 30);
         JTextArea textExperiance;
+        
         textExperiance = new JTextArea();
         textExperiance.setBounds(0, 500, 500, 100);
+        JScrollPane myJScrollPane = new JScrollPane(textExperiance);
         frame.add(textExperiance);
         frame.add(labelExperiance);
+        frame.add(myJScrollPane);
 
         JButton button = new JButton("Your Image");
         button.setBounds(130,1100,150,30); 
         frame.add(button);
+
+        
+        JLabel labelhear;
+        labelhear= new JLabel("How did you hear about this job vacancy");
+        labelhear.setBounds(0, 50, 100, 30);
+        frame.add(labelhear);
+        JRadioButton r4=new JRadioButton(" Newspaper");    
+        JRadioButton r5=new JRadioButton("Internet Ads");  
+        JRadioButton r6=new JRadioButton("Magazine");
+        JRadioButton r7=new JRadioButton("Pamphlet"); 
+        JRadioButton r8=new JRadioButton("Other Application");  
+        r4.setBounds(75,50,100,30);    
+        r5.setBounds(180,50,100,30);
+        r6.setBounds(300,50,100,30);
+        r7.setBounds(300,50,100,30);
+        r7.setBounds(300,50,100,30);
+        ButtonGroup bg1=new ButtonGroup();    
+        bg1.add(r4);bg.add(r5);bg.add(r6); bg.add(r7);  bg.add(r8);    
+        frame.add(r4);frame.add(r5); frame.add(r6);
+        frame.add(r7); frame.add(r8);
+
+        JLabel labelRecommend;
+        labelRecommend= new JLabel("Will you be able to recommend this company to your friends");
+        labelRecommend.setBounds(0, 50, 100, 30);
+        frame.add(labelRecommend);
+        JRadioButton r9=new JRadioButton("Yes");    
+        JRadioButton r10=new JRadioButton("No");  
+        JRadioButton r11=new JRadioButton("Maybe"); 
+        r9.setBounds(75,50,100,30);    
+        r10.setBounds(180,50,100,30);
+        r11.setBounds(300,50,100,30);
+        ButtonGroup bg2=new ButtonGroup();    
+        bg.add(r9);bg.add(r10);bg.add(r11);   
+        frame.add(r9);frame.add(r10); frame.add(r11);
+
+        JButton buttonSubmit = new JButton("Submit");
+        buttonSubmit.setBounds(130,1200,150,30);
+        frame.add(buttonSubmit);
 
         frame.setSize(1000,2000);  
         frame.setLayout(null);  

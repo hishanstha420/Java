@@ -1,2 +1,8 @@
 /.metadata/
 mysql-connector-java-8.0.30.zip
+DBASE
+.settings
+bin
+.classpatha
+Server.class
+Client.class
